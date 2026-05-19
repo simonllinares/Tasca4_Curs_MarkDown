@@ -1,0 +1,44 @@
+site_name: POO How To
+docs_dir: "md"
+site_dir: "site"
+nav:
+  - 1. Introducción: index.md
+  - 2. Cómo crear una clave primaria: CrearCP.md
+  - 3. Cómo hacer que un campo sea obligatorio-opcional: CampoOOP.md
+  - 4. Cómo crear una relación uno a muchos: Relacion1M.md
+  - 5. Cómo hacer una Relación muchos a muchos: RelacionMM.md
+  - 6. Cómo hacer que una relación sea de agregación o de composición: RelacionAGRCOMP.md
+
+theme:
+  name: 'material'
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Canvia a mode oscur
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Canvia a mode clar
+
+plugins:
+  - search
+  - page-to-pdf
+  
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
