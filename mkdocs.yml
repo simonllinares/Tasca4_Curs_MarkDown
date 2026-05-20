@@ -1,6 +1,6 @@
 site_name: POO How To
 docs_dir: "md"
-site_dir: "site"
+site_dir: "docs"
 nav:
   - 1. Introducción: index.md
   - 2. Cómo crear una clave primaria: CrearCP.md
